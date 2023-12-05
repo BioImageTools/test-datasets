@@ -1,18 +1,28 @@
 # test-datasets
-Test data for the BioImageTools nextflow modules and workflows. This is structured like [nf-core/test-datasets](https://github.com/nf-core/test-datasets).
 
+This contains test data for the BioImageTools nextflow modules.
 
-# Creating/Downloading test data
+> ⚠️ **Do not merge your test data to the `main` branch! Each pipeline and module has a dedicated branch.**
 
-Since the test data may be fairly large we recommend storing test data for a module or pipeline in a branch. Also in order to prevent this repo from growing too much try to reuse existing datasets as much as possible.
+The structure of this repository is inspired by [nf-core/test-datasets](https://github.com/nf-core/test-datasets).
 
-Just like [nf-core/test-datasets](https://github.com/nf-core/test-datasets) to clone a test dataset use:
+## Adding data
+
+Check to see if a branch already exists for the module or pipeline you want to test. If not, create a new branch and commit your data there.
+
+## Downloading test data
+
+Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
+
 ```bash
 git clone <url> --single-branch --branch <pipeline/modules/branch_name>
 ```
 
-If more test datasets are needed use:
+To subsequently clone other branches[^1]
+
 ```bash
 git remote set-branches --add origin [remote-branch]
 git fetch
 ```
+
+[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
