@@ -24,3 +24,5 @@ To subsequently clone other branches[^1]
 git remote set-branches --add origin [remote-branch]
 git fetch
 ```
+
+[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
